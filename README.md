@@ -1,5 +1,7 @@
 # Mr.skeleton
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8234fa7f8bec41f096635d22b5383574)](https://app.codacy.com/gh/Kevin621/mr.skeleton?utm_source=github.com&utm_medium=referral&utm_content=Kevin621/mr.skeleton&utm_campaign=Badge_Grade)
+
 ## Usage
 
 This code is a template used to help you design your bot without knowing JavaScript.
