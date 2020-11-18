@@ -16,7 +16,7 @@ The only limitation is that your code must include the mit license that is provi
 
 ## Creating commands
 1 Create a folder in the commands folder (if you already have the categpry created then you dont need  
-##  Example:
+## Example
 ### Ping Command
 ```javascript
     //Put modules here
