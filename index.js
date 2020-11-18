@@ -5,7 +5,7 @@ const fs = require('fs');
 const config = require('./config.json')
 
 // Put a prefix for the commands
-const Prefix = "insert prefix here"
+const Prefix = "!"
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
