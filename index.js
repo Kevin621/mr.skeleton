@@ -15,25 +15,25 @@ bot.aliases = new Discord.Collection();
 })
 
 bot.on("ready", () => {
-     console.log(`Currently online in ${bot.guilds.cache.size}`)
+    console.log(`Currently online in ${bot.guilds.cache.size}`)
 })
 
 bot.on("message", async (message) => {
-    
-    if(message.author.bot){return;}
-    if(message.webhookID){return;}
-    if(!message.guild){return;}
 
-    if(!message.content.startsWith(Prefix)){return;}
-    if(!message.member) {message.member = await message.guild.fetchMember(message);}
+    if (message.author.bot) { return; }
+    if (message.webhookID) { return; }
+    if (!message.guild) { return; }
+
+    if (!message.content.startsWith(Prefix)) { return; }
+    if (!message.member) { message.member = await message.guild.fetchMember(message); }
 
     const args = message.content.slice(Prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
     let command = bot.commands.get(cmd);
-    if(!command) {command = bot.commands.get(bot.aliases.get(cmd));}
+    if (!command) { command = bot.commands.get(bot.aliases.get(cmd)); }
 
-    if(command){
+    if (command) {
         command.run(bot, message, args);
     }
 });
