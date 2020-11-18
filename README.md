@@ -26,8 +26,8 @@ The only limitation is that your code must include the mit license that is provi
 
 ### Ping Command
 
-``` javascript
-    //Put modules here
+```javascript
+//Put modules here
     const Discord = require('discord.js')
     module.export = {
         name: "Replace this",
@@ -50,5 +50,5 @@ The only limitation is that your code must include the mit license that is provi
             resMsg.edit(editEmbed);
         }
     };
-
 ```
+
