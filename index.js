@@ -38,4 +38,4 @@ bot.on("message", async (message) => {
     }
 });
 //go to config.json and put in your bots token
-bot.login(config.key)
+bot.login()
