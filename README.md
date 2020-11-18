@@ -1,13 +1,17 @@
 # Mr.skeleton
+
 ## Usage
+
 This code is a template used to help you design your bot without knowing JavaScript.
 
 ## Rules
+
 This bots code is allowed to be edited in anyway
 <br>
 The only limitation is that your code must include the mit license that is provided.
 
 ## Setup
+
     1. You must have node.js installed on your computer.
     2. Put the bot token in anyway but if it is in the files then do not post to github unless it is a private repo.
     3. Edit the code to include the features that are desired.
@@ -15,9 +19,13 @@ The only limitation is that your code must include the mit license that is provi
     5. Once its ready just type the command 'node .'
 
 ## Creating commands
+
 1 Create a folder in the commands folder (if you already have the categpry created then you dont need  
+
 ## Example
+
 ### Ping Command
+
 ```javascript
     //Put modules here
     const Discord = require('discord.js')
@@ -42,3 +50,5 @@ The only limitation is that your code must include the mit license that is provi
             resMsg.edit(editEmbed);
         }
     };
+
+```
