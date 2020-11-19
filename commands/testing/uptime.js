@@ -7,8 +7,6 @@ module.exports = {
     description: "Displays the current uptime of the bot!",
     run: async (bot, message, args) => {
 
-        if (!message.author.id === 582303186476466206) { return; }
-
         let totalSeconds = (bot.uptime / 1000);
         let days = Math.floor(totalSeconds / 86400);
         totalSeconds %= 86400;

@@ -16,7 +16,7 @@ module.exports = {
             try{
                 muteRole = await message.guild.roles.create({ data: { name: "muted", permissions: ['SEND_MESSAGES, VIEW_CHANNEL, READ_MESSAGE_HISTORY'] } })
                 message.guild.channels.cache.forEach(async (channel, id) => {
-                    message.channel.updateOverwrite(channel.guild.roles.muteRole.id, { SEND_MESSAGES: false });
+                    message.channel.updateOverwrite(channel.guild.roles.muteRole.id, { "SEND_MESSAGES": false });
                 });
             }catch(err){
                 console.log(err)
