@@ -52,4 +52,8 @@ The only limitation is that your code must include the mit license that is provi
         }
     };
 ```
-
+## This bot already includes:
+- Mute command 
+- Kick Command
+- Ban Command
+- EXE file to start the bot
